@@ -1,0 +1,153 @@
+.steps-content {
+  margin-top: 16px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 6px;
+  background-color: #fafafa;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+.dropzone{
+    width: calc(100% - 40px);
+    min-height:100px;
+    overflow: hidden;
+    border: 2px dashed #eee;
+    padding: 10px;
+    margin:0px 20px 20px;
+    box-sizing: border-box;
+}
+
+.dropzone.over{
+    border: 2px dashed red;
+}
+.addBtn{
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 18px;
+    background: gold;
+    color:#fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+.previmgbox{
+  float: left;
+  margin-right: 10px;
+  width: 160px;
+  height:90px;
+  border: 1px solid #333;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+  position: relative;
+  &:hover{
+    border: 3px solid #c00;
+    cursor: pointer;
+  }
+  &:hover::after{
+    content: "编辑";
+    position: absolute;
+    height:90px;
+    width:100%;
+    line-height: 90px;
+    text-align: center;
+    color:#000;
+
+  }
+}
+em{
+  position: absolute;
+  top:50%;
+  left:0;
+  width: 100%;
+  height: 20px;
+  background:rgba(0, 0, 0, 0.5);
+  color:#fff;
+  text-align: center;
+  line-height: 20px;
+  margin-top: -10px;
+
+}
+
+.xuanfuceng{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top:0px;
+    left:0px;
+    .cutbox{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        background:#fff;
+        .loadingTip{
+            position: fixed;
+            width: 130px;
+            text-align: center;
+            top:40%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color:#fff;
+            font-size: 16px;
+        }
+    }
+    .imgBox_wrap{
+        position: relative;
+        .mask{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background:rgba(0, 0, 0, 0.6);
+            top:0px;
+            left:0px;
+            z-index: 1;
+        }
+        .cut_fang{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top:0px;
+            left:0px;
+            z-index: 2;
+            overflow: hidden;
+            img{
+                position: relative;
+            }
+        }
+    }
+    .previewZone{
+        position: absolute;
+        top:0px;
+        right:0px;
+        width: 180px;
+        padding-top:10px;
+        div{
+            border: 1px solid #333;
+            margin-bottom: 10px;
+            overflow:hidden;
+            img{
+                position: relative;
+            }
+        }
+        .big_p{
+            width: 140px;
+            height: 140px;
+        }
+        .mid_p{
+            width: 100px;
+            height: 100px;
+        }
+        .small_p{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

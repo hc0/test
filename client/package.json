@@ -1,0 +1,31 @@
+{
+  "name": "1234",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base ./www --port 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "style-loader": "^0.21.0"
+  },
+  "dependencies": {
+    "antd": "^3.6.4",
+    "classnames": "^2.2.6",
+    "dva": "^2.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
